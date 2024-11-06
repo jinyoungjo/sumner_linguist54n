@@ -4,7 +4,7 @@
             //timeline: timeline,
             on_finish: function () {
                 jsPsych.data.displayData('csv');
-                document.body.innerHTML = "<p>Thank you for participating! You can close this window now.</p>";
+                window.location.href = 'finish.html';
             }
         });
         
