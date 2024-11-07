@@ -2,11 +2,13 @@
         
         const jsPsych = initJsPsych({
             //timeline: timeline,
-            on_finish: function () {
-                jsPsych.data.displayData('csv');
-                window.location.href = 'finish.html';
+            
+            on_finish: function(data) {
+            proliferate.submit({"trials": data.values()});
+            window.location.href = 'finish.html';
             }
         });
+        
         
         let timeline = [];
         const irb = {
