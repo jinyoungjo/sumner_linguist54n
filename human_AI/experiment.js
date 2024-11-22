@@ -13,7 +13,7 @@
             // Which plugin to use
             type: jsPsychHtmlButtonResponse,
             // What should be displayed on the screen
-            stimulus: '<p><font size="3">We invite you to participate in a research study on language comprehension. <br><br>You will hear a statement, and determine whether the statement is true or false. <br><br>If you think the statement is true, press D key, If you think the statement is false, press K key.</font></p>',
+            stimulus: '<p><font size="3">Welcome! Today you will be participating in a research study on language comprehension.<br><br>In this study, you will hear a series of statements spoken by multiple talkers. For each statement, it is your job to determine whether the statement is true or false. Please answer as quickly and accurately as possible.<br><br>If you think the statement is true, press D key, If you think the statement is false, press K key. We suggest placing your left index finger on the D key and right index finger on the K key to improve consistency.<br><br>Thank you for participating! </font></p>',
             // What should the button(s) say
             choices: ['Continue']
         };
