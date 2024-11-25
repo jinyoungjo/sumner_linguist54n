@@ -56,5 +56,16 @@
         }
         timeline.push(block1);
 
+        var survey = {
+            type: jsPsychSurveyText,
+            questions: [
+              {prompt: 'What is your age?', name: 'age'},
+              {prompt: 'What is your gender?', name: 'gender'},
+              {prompt: 'How many of the statements you were presented with did you already know to be true or false?', name: 'already_known'}
+            ]
+        };
+          
+        
+        timeline.push(survey);
 
         jsPsych.run(timeline)
