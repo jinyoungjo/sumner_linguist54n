@@ -13,7 +13,7 @@
             // Which plugin to use
             type: jsPsychHtmlButtonResponse,
             // What should be displayed on the screen
-            stimulus: '<p><font size="3">We invite you to participate in a research study on language comprehension. <br><br>You will hear a statement, and determine whether the statement is true or false. <br><br>If you think the statement is true, press D key, If you think the statement is false, press K key.</font></p>',
+            stimulus: '<p><font size="3">We invite you to participate in a research study on language comprehension. <br><br>On each page, you will listen to a witness and rate how credible their statement sounds. <br><br>Use the slider to provide your rating, where 1 means "least credible" and 5 means "most credible."</font></p>',
             // What should the button(s) say
             choices: ['Continue']
         };
@@ -32,7 +32,7 @@
                 {
                     type: jsPsychAudioSliderResponse,
                     stimulus: jsPsych.timelineVariable('filename'),
-                    labels: ['1', '2', '3', '4', '5'],
+                    labels: ['1 (least credible)', '2', '3', '4', '5 (most credible)'],
                     min: 1,
                     max: 5,
                     step: 1,
