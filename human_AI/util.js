@@ -40,7 +40,7 @@ function getBalancedStimuli(stimuli) {
         !usedStatementNumbers.has(s.statement_number)
     );
 
-    // Randomly select 2 stimuli for this condition
+    // Randomly select 6 stimuli for this condition
     const sampledStimuli = jsPsych.randomization.sampleWithoutReplacement(matchingStimuli, 6);
 
     // Add the statement numbers of the selected stimuli to the used set
